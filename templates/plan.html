@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Plan</title>
+</head>
+<body>
+
+    <h1>{{ goal }} - {{ experience }} Plan</h1>
+
+    <ul>
+        {% for plan in plans %}
+            <li>Day {{ plan.day_number }}: {{ plan.description }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Diet Advice</h2>
+    <p>{{ diet.advice_text }}</p>
+
+
+    <br>
+    <a href="/">Go Back</a>
+
+</body>
+</html>

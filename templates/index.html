@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Gym Trainer</title>
+</head>
+<body>
+
+    <h1>Personal Gym Trainer</h1>
+
+    <a href="/logout">Logout</a>
+    <br><br>
+
+    <a href="/my-plans">My Plans</a>
+    <br><br>
+
+
+
+    <form method="POST" action="/generate">
+        <label>Select Goal:</label>
+        <select name="goal">
+            <option value="Fat Loss">Fat Loss</option>
+            <option value="Muscle Gain">Muscle Gain</option>
+            <option value="Strength">Strength</option>
+        </select>
+
+        <br><br>
+
+        <label>Experience Level:</label>
+        <select name="experience">
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Generate Plan</button>
+    </form>
+
+</body>
+</html>

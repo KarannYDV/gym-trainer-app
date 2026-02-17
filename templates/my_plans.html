@@ -1,0 +1,9 @@
+<h2>My Saved Plans</h2>
+
+<ul>
+{% for plan in plans %}
+    <li>{{ plan.goal }} - {{ plan.experience }} ({{ plan.created_at }})</li>
+{% endfor %}
+</ul>
+
+<a href="/">Back</a>
